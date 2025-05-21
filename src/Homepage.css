@@ -1,0 +1,731 @@
+/* src/styles/Home.module.css
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.subDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 70px;
+  padding: 0 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.Home a{
+    text-decoration: none;
+}
+
+.homeNav a {
+  font-size: 22px;
+  color: #0e5b37;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.subLinks a {
+  margin: 0 15px;
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.subLinks a:hover {
+  color: #0e5b37;
+}
+
+.subLinks button {
+  margin-left: 15px;
+  font-size: 15px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.loginBtn {
+  background-color: #0e5b37;
+  border: none;
+  padding: 8px 18px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.loginBtn:hover {
+  background-color: #094a2c;
+}
+
+.signBtn {
+  background-color: transparent;
+  border: 1.5px solid #0e5b37;
+  color: #0e5b37;
+  padding: 8px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signBtn:hover {
+  background-color: #0e5b37;
+  color: #fff;
+}
+
+.navBtn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 60px 20px;
+}
+
+.navBtn button {
+  border: 1px solid #0e5b37;
+  background-color: white;
+  color: #0e5b37;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.navBtn button:hover {
+  background: #0e5b37;
+  color: white;
+  transform: scale(1.05);
+}
+
+.goodsDiv {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  gap: 30px;
+}
+
+.Cilocation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.Second-sub-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ViewDetails-Div{
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  gap: 10px;
+}
+
+.Img1{
+  height: 270px;
+  width: 230px;
+}
+.Cilocation-div{
+  background-color: #fdfdfd;
+  width: 300px;
+  height: 420px;
+}
+
+.lengthDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30;
+  margin-bottom: 5px;
+}
+.lengthDiv p{
+  padding-right: 30px;
+}
+.lengthDiv button{
+  padding: 4px;
+  border: solid 1px #0e5b37;
+}
+.view-btn {
+  padding: 6px 16px;
+  color: #0e5b37;
+  border: 2px solid #0e5b37;
+  background-color: transparent;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-btn:hover {
+  background-color: #0e5b37;
+  color: white;
+}
+
+.apply-btn{
+   padding: 6px 8px;
+  color: whitesmoke;
+  border: 2px solid #0e5b37;
+  background: #0e5b37;
+  /* background-color: transparent; */
+  /* border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right:  30px;
+}
+.apply-btn:hover {
+  background-color: white;
+  color: #0e5b37;
+}
+
+
+
+.size-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+
+}
+ */
+
+
+
+
+
+
+
+ /* Homepage.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f2f4f5;
+  color: #333;
+}
+
+.homepage-container {
+  padding-bottom: 60px;
+}
+
+.subDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  height: 70px;
+  padding: 0 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.home-link {
+  font-size: 22px;
+  color: #0e5b37;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.subLinks a {
+  margin: 0 15px;
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.subLinks a:hover {
+  color: #0e5b37;
+}
+
+.subLinks button {
+  margin-left: 15px;
+  font-size: 15px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.loginBtn,
+.signBtn {
+  padding: 8px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.loginBtn {
+  background-color: #0e5b37;
+  color: #fff;
+  border: none;
+}
+
+.loginBtn:hover {
+  background-color: #094a2c;
+}
+
+.signBtn {
+  background-color: transparent;
+  border: 1.5px solid #0e5b37;
+  color: #0e5b37;
+}
+
+.signBtn:hover {
+  background-color: #0e5b37;
+  color: #fff;
+}
+
+.navBtn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.navBtn button {
+  border: 1px solid #0e5b37;
+  background-color: white;
+  color: #0e5b37;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.navBtn button:hover {
+  background: #0e5b37;
+  color: white;
+  transform: scale(1.05);
+}
+
+.goodsDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+  gap: 30px;
+  background-color: #eaf3ee;
+}
+
+.Cilocation-div {
+  background-color: #fff;
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.Cilocation-div:hover {
+  transform: translateY(-5px);
+}
+
+.Img1 {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.Cilocation {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #0e5b37;
+  font-weight: 500;
+}
+
+.icon {
+  font-size: 18px;
+}
+
+.product-name {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.size-div,
+.lengthDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.info-btn {
+  padding: 4px 10px;
+  border: solid 1px #0e5b37;
+  border-radius: 6px;
+  background-color: #f3fef9;
+  color: #0e5b37;
+  font-weight: 500;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.info-btn:hover {
+  background-color: #d4f6e4;
+}
+
+.ViewDetails-Div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.view-btn,
+.apply-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-btn {
+  background-color: transparent;
+  color: #0e5b37;
+  border: 2px solid #0e5b37;
+}
+
+.view-btn:hover {
+  background-color: #0e5b37;
+  color: white;
+}
+
+.apply-btn {
+  background-color: #0e5b37;
+  color: white;
+  border: 2px solid #0e5b37;
+}
+
+.apply-btn:hover {
+  background-color: white;
+  color: #0e5b37;
+}
+
+.Second-sub-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+}
+
+.mini-card {
+  text-align: center;
+}
+
+.mini-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+
+.Second-sub-div2 {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.mini-card2 {
+  width: 300px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.mini-card2:hover {
+  transform: translateY(-5px);
+}
+
+.mini-img2 {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.Cilocation2 {
+  margin-top: 0.7rem;
+  color: #444;
+  font-size: 14px;
+}
+
+.icon2 {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.3rem;
+  font-size: 18px;
+  color: #555;
+}
+
+.Cilocation2 p {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.product-name2 {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0.6rem 0;
+}
+
+.size-div2,
+.lengthDiv2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.info-btn2 {
+  padding: 0.3rem 0.6rem;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: default;
+}
+
+.ViewDetails-Div2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.view-btn2,
+.apply-btn2 {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.view-btn2 {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.apply-btn2 {
+  background-color: #0e5b37;
+  color: #fff;
+}
+
+.apply-btn2:hover {
+  background-color: white;
+  color: #0e5b37;
+}
+.view-btn2:hover {
+  background-color: #0e5b37;
+  color: white;
+}
+
+
+.footer {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  margin-top: 90px;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-brand h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-brand p {
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.footer-column h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.footer-column p {
+  margin: 6px 0;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-column p:hover {
+  color: #0077b6;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+}
+
+.footer-bottom hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Second-sub-div {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.mini-card {
+  width: 250px;
+  background-color: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.mini-card:hover {
+  transform: translateY(-5px);
+}
+
+.mini-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.Cilocation {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.7rem;
+  color: #444;
+  font-size: 14px;
+}
+
+.product-name {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0.5rem 0;
+}
+
+.size-div,
+.lengthDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.info-btn {
+  padding: 0.3rem 0.6rem;
+  background-color: #eaeaea;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: default;
+}
+
+.ViewDetails-Div {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.view-btn,
+.apply-btn {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.view-btn {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.apply-btn {
+  background-color: #0e5b37;
+  color: #fff;
+}
