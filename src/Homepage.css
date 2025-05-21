@@ -563,6 +563,9 @@ body {
   color: white;
 }
 
+.Iconify{
+  cursor: pointer;
+}
 
 .footer {
   background-color: #f4f4f4;

@@ -109,9 +109,9 @@ const HomePage = () => {
       <h2>HOPE</h2>
       <p>Giving Hope One step at a time</p>
       <div className="social-icons">
-        <FaFacebookMessenger />
-        <FaTwitter />
-        <FaLinkedin />
+        <FaFacebookMessenger className="Iconify" />
+        <FaTwitter   className="Iconify"/>
+        <FaLinkedin  className="Iconify" />
       </div>
     </div>
 
