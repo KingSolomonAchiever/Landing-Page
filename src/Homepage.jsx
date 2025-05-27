@@ -1,8 +1,16 @@
 
 
 
+
+
+
+
+
+
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Signup from "./Components/Signup";
+import DonationSection from "./Components/DonationSection";
 import Login from "./Components/Login";
 import "./Homepage.css";
 import { CiLocationOn, CiMail } from "react-icons/ci";
@@ -10,11 +18,7 @@ import { FaFacebookMessenger, FaTwitter, FaLinkedin, FaPhoneAlt } from "react-ic
 
 const HomePage = () => {
   const [products, setProducts] = useState([]);
-
-
-
-
-const [showLogin, setShowLogin] = useState(false);
+  const [showLogin, setShowLogin] = useState(false);
   const [showSignup, setShowSignup] = useState(false);
 
   const toggleLogin = () => {
@@ -27,12 +31,6 @@ const [showLogin, setShowLogin] = useState(false);
     setShowLogin(false);
   };
 
-
-
-
-
-
-  // Fetch data from API
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
       .then((res) => res.json())
@@ -41,36 +39,25 @@ const [showLogin, setShowLogin] = useState(false);
   }, []);
 
   return (
-
-
-
-
-
-
-
-
-
-
-    
     <div className="homepage-container">
       {/* Header */}
+      
       <header className="subDiv">
         <div className="homeNav">
-          <a href="#" className="home-link">Home</a>
+          <Link to="/" className="home-link">Home</Link>
         </div>
         <nav className="subLinks">
-          <a href="#">About</a>
-          <a href="#">FAQ</a>
-          <a href="#">Contact</a>
-          <button className="loginBtn"  onClick={toggleLogin}>Log In</button>
+          <Link to="/about" className="nav-link">About</Link>
+          <Link to="/faq" className="nav-link">FAQ</Link>
+          <Link to="/contact" className="nav-link">Contact</Link>
+          <button className="loginBtn" onClick={toggleLogin}>Log In</button>
           <button className="signBtn" onClick={toggleSignup}>Sign Up</button>
-
         </nav>
       </header>
-{showLogin && <Login onClose={() => setShowLogin(false)} />}
 
-     {showSignup && <Signup  onCloseUp={() => setShowSignup(false)} />}
-     
+      {showLogin && <Login onClose={() => setShowLogin(false)} />}
+      {showSignup && <Signup onCloseUp={() => setShowSignup(false)} />}
+      <DonationSection />
 
       {/* Categories */}
       <section className="navBtn">
@@ -99,13 +86,13 @@ const [showLogin, setShowLogin] = useState(false);
             </div>
             <div className="ViewDetails-Div">
               <button className="view-btn">View Details</button>
-              <button className="apply-btn">Apply</button>
+              <button className="apply-btn"><Link to="/apply" className="ApplyBTN">  Apply </Link></button>
             </div>
           </div>
         ))}
       </section>
 
-      {/* Secondary Mini Cards */}
+      {/* Mini Cards 1 */}
       <section className="Second-sub-div2">
         {products.slice(6, 9).map((product) => (
           <div key={product.id} className="mini-card2">
@@ -124,16 +111,15 @@ const [showLogin, setShowLogin] = useState(false);
               </div>
               <div className="ViewDetails-Div2">
                 <button className="view-btn">View Details</button>
-                <button className="apply-btn">Apply</button>
+                <button className="apply-btn"><Link to="/apply" className="ApplyBTN">  Apply </Link></button>
               </div>
             </div>
           </div>
         ))}
       </section>
 
-
-
-  <section className="Second-sub-div2">
+      {/* Mini Cards 2 */}
+      <section className="Second-sub-div2">
         {products.slice(10, 13).map((product) => (
           <div key={product.id} className="mini-card2">
             <img src={product.image} alt={product.title} className="mini-img2" />
@@ -151,13 +137,12 @@ const [showLogin, setShowLogin] = useState(false);
               </div>
               <div className="ViewDetails-Div2">
                 <button className="view-btn">View Details</button>
-                <button className="apply-btn">Apply</button>
+       <button className="apply-btn"><Link to="/apply" className="ApplyBTN">  Apply </Link></button>
               </div>
             </div>
           </div>
         ))}
       </section>
-
 
       {/* Footer */}
       <footer className="footer">
@@ -194,6 +179,7 @@ const [showLogin, setShowLogin] = useState(false);
             <p><FaPhoneAlt /> +234 7035225984</p>
           </div>
         </div>
+
         <div className="footer-bottom">
           <hr />
           <p>Copyright 2025 @Hope All Rights Reserved</p>
